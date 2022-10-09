@@ -1,0 +1,62 @@
+{
+  "id": "26a2d0c4-8ab0-418b-b8a9-61693fc5f7d7",
+  "brand": "Lenovo",
+  "name": "Thinkpad P53",
+  "cpu": {
+    "brand": "AMD",
+    "name": "Ryzen 7 PRO 2700U",
+    "number_cores": 8,
+    "number_threads": 9,
+    "min_ghz": 2.827144098160354,
+    "max_ghz": 3.171844777853285
+  },
+  "ram": {
+    "value": "17",
+    "unit": "GIGABYTE"
+  },
+  "gpus": [
+    {
+      "brand": "AMD",
+      "name": "RX 590",
+      "min_ghz": 1.2949562446858196,
+      "max_ghz": 1.4667831137995364,
+      "memory": {
+        "value": "5",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "storages": [
+    {
+      "driver": "SSD",
+      "memory": {
+        "value": "932",
+        "unit": "GIGABYTE"
+      }
+    },
+    {
+      "driver": "HDD",
+      "memory": {
+        "value": "3",
+        "unit": "TERABYTE"
+      }
+    }
+  ],
+  "screen": {
+    "size_inch": 14.358241,
+    "resolution": {
+      "width": 3434,
+      "height": 1932
+    },
+    "panel": "OLED",
+    "multitouch": false
+  },
+  "keyboard": {
+    "layout": "AZERTY",
+    "backlit": false
+  },
+  "weight_kg": 2.8252922260263853,
+  "price_usd": 3058.9275105883235,
+  "release_year": 2017,
+  "updated_at": "2022-10-08T08:55:04.864856Z"
+}
