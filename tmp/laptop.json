@@ -1,25 +1,25 @@
 {
-  "id": "26a2d0c4-8ab0-418b-b8a9-61693fc5f7d7",
-  "brand": "Lenovo",
-  "name": "Thinkpad P53",
+  "id": "d6135f4c-4b4a-4a76-9d81-c6e67d1705de",
+  "brand": "Apple",
+  "name": "Macbook Air",
   "cpu": {
     "brand": "AMD",
     "name": "Ryzen 7 PRO 2700U",
-    "number_cores": 8,
-    "number_threads": 9,
-    "min_ghz": 2.827144098160354,
-    "max_ghz": 3.171844777853285
+    "number_cores": 3,
+    "number_threads": 3,
+    "min_ghz": 3.2725137729637757,
+    "max_ghz": 4.117645465426301
   },
   "ram": {
-    "value": "17",
+    "value": "25",
     "unit": "GIGABYTE"
   },
   "gpus": [
     {
       "brand": "AMD",
-      "name": "RX 590",
-      "min_ghz": 1.2949562446858196,
-      "max_ghz": 1.4667831137995364,
+      "name": "RX Vega-56",
+      "min_ghz": 1.0025494263967594,
+      "max_ghz": 1.7165231813683772,
       "memory": {
         "value": "5",
         "unit": "GIGABYTE"
@@ -30,7 +30,7 @@
     {
       "driver": "SSD",
       "memory": {
-        "value": "932",
+        "value": "385",
         "unit": "GIGABYTE"
       }
     },
@@ -43,20 +43,20 @@
     }
   ],
   "screen": {
-    "size_inch": 14.358241,
+    "size_inch": 15.872374,
     "resolution": {
-      "width": 3434,
-      "height": 1932
+      "width": 2503,
+      "height": 1408
     },
-    "panel": "OLED",
+    "panel": "IPS",
     "multitouch": false
   },
   "keyboard": {
-    "layout": "AZERTY",
+    "layout": "QWERTZ",
     "backlit": false
   },
-  "weight_kg": 2.8252922260263853,
-  "price_usd": 3058.9275105883235,
+  "weight_kg": 2.154663254401696,
+  "price_usd": 3351.646834876379,
   "release_year": 2017,
-  "updated_at": "2022-10-08T08:55:04.864856Z"
+  "updated_at": "2022-10-09T07:05:17.897029Z"
 }

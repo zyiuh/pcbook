@@ -3,9 +3,9 @@ package serializer_test
 import (
 	"testing"
 
-	"pcbook/pb"
-	"pcbook/sample"
-	"pcbook/serializer"
+	"github.com/zyiuh/pcbook/pb"
+	"github.com/zyiuh/pcbook/sample"
+	"github.com/zyiuh/pcbook/serializer"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/require"

@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"time"
 
-	"pcbook/pb"
+	"github.com/zyiuh/pcbook/pb"
 
 	"github.com/google/uuid"
 )
