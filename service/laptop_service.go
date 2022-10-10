@@ -4,9 +4,11 @@ import (
 	"context"
 	"errors"
 	"log"
+	"time"
 
 	"github.com/google/uuid"
 	"github.com/zyiuh/pcbook/pb"
+
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )
@@ -25,7 +27,7 @@ func (server *LaptopServer) CreateLaptop(
 	req *pb.CreateLaptopRequest,
 ) (*pb.CreateLaptopResponse, error) {
 	laptop := req.GetLaptop()
-	log.Printf("receive a create-laptop request with id: %s", laptop)
+	log.Printf("receive a create-laptop request with id: %s", laptop.Id)
 
 	// 检查ID是否是UUID
 	if len(laptop.Id) > 0 {
@@ -39,6 +41,19 @@ func (server *LaptopServer) CreateLaptop(
 			return nil, status.Errorf(codes.Internal, "cannot generate a new laptop ID: %v", err)
 		}
 		laptop.Id = id.String()
+	}
+
+	// 一些繁重的操作，模拟服务器请求超时
+	time.Sleep(6 * time.Second)
+
+	if ctx.Err() == context.Canceled {
+		log.Print("request is canceled")
+		return nil, status.Error(codes.Canceled, "request is canceled")
+	}
+
+	if ctx.Err() == context.DeadlineExceeded {
+		log.Print("deadline is exceeded")
+		return nil, status.Error(codes.DeadlineExceeded, "deadline is exceeded")
 	}
 
 	// 将数据存储在内存中
