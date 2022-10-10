@@ -5,11 +5,12 @@ import (
 	"net"
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/zyiuh/pcbook/pb"
 	"github.com/zyiuh/pcbook/sample"
 	"github.com/zyiuh/pcbook/serializer"
 	"github.com/zyiuh/pcbook/service"
+
+	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 )
 
