@@ -37,6 +37,7 @@ func TestClientCreateLaptop(t *testing.T) {
 	require.Equal(t, expectedID, res.Id)
 
 	// check that the laptop is saved to the store
+	// 检查数据是否存储在内存中
 	other, err := laptopStore.Find(res.Id)
 	require.NoError(t, err)
 	require.NotNil(t, other)

@@ -6,9 +6,11 @@ import (
 	"fmt"
 	"log"
 	"sync"
+	"time"
+
+	"github.com/zyiuh/pcbook/pb"
 
 	"github.com/jinzhu/copier"
-	"github.com/zyiuh/pcbook/pb"
 )
 
 // ErrAlreadyExists is returned when a record with the same ID already exists in the store
@@ -87,6 +89,14 @@ func (store *InMemoryLaptopStore) Search(
 		// log.Print("checking laptop id: ", laptop.GetId())
 
 		if isQualified(filter, laptop) {
+			time.Sleep(time.Second)
+			log.Print("checking laptop id: ", laptop.GetId())
+
+			if ctx.Err() == context.Canceled || ctx.Err() == context.DeadlineExceeded {
+				log.Print("context is cancelled")
+				return errors.New("context is cancelled")
+			}
+
 			other, err := deepCopy(laptop)
 			if err != nil {
 				return err
