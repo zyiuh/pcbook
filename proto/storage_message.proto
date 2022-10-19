@@ -1,8 +1,12 @@
 syntax = "proto3";
 
-import "memory_message.proto";
+package techschool.pcbook;
 
-option go_package = "./pb";
+option go_package = ".;pb";
+option java_package = "com.gitlab.techschool.pcbook.pb";
+option java_multiple_files = true;
+
+import "memory_message.proto";
 
 message Storage {
   enum Driver {

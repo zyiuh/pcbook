@@ -1,27 +1,27 @@
 {
-  "id": "d6135f4c-4b4a-4a76-9d81-c6e67d1705de",
+  "id": "22901c4c-2f34-43b6-8190-e3a57daa1a41",
   "brand": "Apple",
   "name": "Macbook Air",
   "cpu": {
     "brand": "AMD",
     "name": "Ryzen 7 PRO 2700U",
-    "number_cores": 3,
-    "number_threads": 3,
-    "min_ghz": 3.2725137729637757,
-    "max_ghz": 4.117645465426301
+    "number_cores": 2,
+    "number_threads": 6,
+    "min_ghz": 2.678712980507639,
+    "max_ghz": 4.812780681764419
   },
   "ram": {
-    "value": "25",
+    "value": "55",
     "unit": "GIGABYTE"
   },
   "gpus": [
     {
       "brand": "AMD",
       "name": "RX Vega-56",
-      "min_ghz": 1.0025494263967594,
-      "max_ghz": 1.7165231813683772,
+      "min_ghz": 1.3477295700901486,
+      "max_ghz": 1.707348476579961,
       "memory": {
-        "value": "5",
+        "value": "6",
         "unit": "GIGABYTE"
       }
     }
@@ -30,33 +30,33 @@
     {
       "driver": "SSD",
       "memory": {
-        "value": "385",
+        "value": "221",
         "unit": "GIGABYTE"
       }
     },
     {
       "driver": "HDD",
       "memory": {
-        "value": "3",
+        "value": "6",
         "unit": "TERABYTE"
       }
     }
   ],
   "screen": {
-    "size_inch": 15.872374,
+    "size_inch": 16.203865,
     "resolution": {
-      "width": 2503,
-      "height": 1408
+      "width": 2158,
+      "height": 1214
     },
     "panel": "IPS",
-    "multitouch": false
+    "multitouch": true
   },
   "keyboard": {
-    "layout": "QWERTZ",
-    "backlit": false
+    "layout": "QWERTY",
+    "backlit": true
   },
-  "weight_kg": 2.154663254401696,
-  "price_usd": 3351.646834876379,
+  "weight_kg": 1.8918947371347534,
+  "price_usd": 2316.488298992809,
   "release_year": 2017,
-  "updated_at": "2022-10-09T07:05:17.897029Z"
+  "updated_at": "2021-02-02T20:54:24.526251Z"
 }
