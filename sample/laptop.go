@@ -1,9 +1,8 @@
 package sample
 
 import (
-	"github.com/zyiuh/pcbook/pb"
-
 	"github.com/golang/protobuf/ptypes"
+	"github.com/zyiuh/pcbook/pb"
 )
 
 // NewKeyboard returns a new sample keyboard

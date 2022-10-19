@@ -3,12 +3,11 @@ package serializer_test
 import (
 	"testing"
 
+	"github.com/golang/protobuf/proto"
+	"github.com/stretchr/testify/require"
 	"github.com/zyiuh/pcbook/pb"
 	"github.com/zyiuh/pcbook/sample"
 	"github.com/zyiuh/pcbook/serializer"
-
-	"github.com/golang/protobuf/proto"
-	"github.com/stretchr/testify/require"
 )
 
 func TestFileSerializer(t *testing.T) {

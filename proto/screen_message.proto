@@ -1,12 +1,17 @@
 syntax = "proto3";
 
-option go_package = "./pb";
+package techschool.pcbook;
+
+option go_package = ".;pb";
+option java_package = "com.gitlab.techschool.pcbook.pb";
+option java_multiple_files = true;
 
 message Screen {
   message Resolution {
     uint32 width = 1;
     uint32 height = 2;
   }
+
   enum Panel {
     UNKNOWN = 0;
     IPS = 1;

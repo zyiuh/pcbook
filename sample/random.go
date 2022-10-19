@@ -4,9 +4,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/zyiuh/pcbook/pb"
-
 	"github.com/google/uuid"
+	"github.com/zyiuh/pcbook/pb"
 )
 
 func init() {
